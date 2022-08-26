@@ -3,6 +3,7 @@ import time
 from selenium.webdriver.common.by import By
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 '''Создание класса Catalog Page, дочернего по отношению к Base'''
 
@@ -57,6 +58,7 @@ class Catalog_page(Base):
 # Scenario - здесь реализуется сценарий взаимодействия с главной страницей
 
     def tab_switching(self):
+        Logger.add_start_step(method='tab_switching')
         time.sleep(1)
         self.click_tab_brands()
         time.sleep(1)
@@ -64,6 +66,7 @@ class Catalog_page(Base):
         time.sleep(1)
         self.click_tab_catalog()
         time.sleep(1)
+        Logger.add_end_step(url=self.driver.current_url, method='tab_switching')
 
 
     # python -m pytest -s -v

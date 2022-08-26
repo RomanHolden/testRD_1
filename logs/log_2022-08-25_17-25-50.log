@@ -1,0 +1,42 @@
+
+-----
+Test: test_add_to_favourites.py::test_add_item_to_favourites (call)
+Start time: 2022-08-25 17:25:51.416740
+Start name method: authorization
+
+End time: 2022-08-25 17:25:51.422724
+End name method: driver_basic
+URL: data:,
+
+-----
+End time: 2022-08-25 17:25:52.290228
+End name method: driver_basic
+URL: https://leonardo.ru/
+
+-----
+End time: 2022-08-25 17:25:57.383229
+End name method: authorization
+URL: https://leonardo.ru/profile/
+
+-----
+
+-----
+Test: test_add_to_favourites.py::test_add_item_to_favourites (call)
+Start time: 2022-08-25 17:25:58.886973
+Start name method: favourites
+
+End time: 2022-08-25 17:25:58.890116
+End name method: driver_basic
+URL: https://leonardo.ru/profile/
+
+-----
+End time: 2022-08-25 17:25:59.537378
+End name method: driver_basic
+URL: https://leonardo.ru/
+
+-----
+End time: 2022-08-25 17:26:11.124831
+End name method: favourites
+URL: https://leonardo.ru/profile/wishlist/
+
+-----

@@ -1,0 +1,17 @@
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-25 18:38:36.899947
+Start name method: click_menu_catalog
+
+End time: 2022-08-25 18:38:37.430407
+End name method: click_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-25 18:38:38.933121
+Start name method: tab_switching
+

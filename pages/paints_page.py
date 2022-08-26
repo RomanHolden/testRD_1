@@ -4,6 +4,7 @@ from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 '''Создание класса Paints Page, дочернего по отношению к Base'''
 
@@ -94,6 +95,7 @@ class Paints_page(Base):
 # Scenario - здесь реализуется сценарий взаимодействия с главной страницей
 
     def add_item_into_cart(self):
+        Logger.add_start_step(method='add_item_into_cart')
         time.sleep(0.2)
         self.click_item_1()
         time.sleep(0.2)
@@ -104,5 +106,6 @@ class Paints_page(Base):
         time.sleep(0.2)
         self.click_cart_icon()
         self.assert_url('https://leonardo.ru/cart/')
+        Logger.add_end_step(url=self.driver.current_url, method='add_item_into_cart')
 
     # python -m pytest -s -v

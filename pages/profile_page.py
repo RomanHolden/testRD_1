@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 '''Создание класса Profile Page, дочернего по отношению к Base'''
 
@@ -105,6 +106,7 @@ class Profile_page(Base):
 # Scenario - здесь реализуется сценарий взаимодействия с главной страницей
 
     def editing_profile(self):
+        Logger.add_start_step(method='editing_profile')
         self.driver_basic()
 
         time.sleep(1.5)
@@ -132,6 +134,7 @@ class Profile_page(Base):
         self.assert_word(self.get_name_marker(), 'Арнольд Иванович')
 
         self.get_screenshot()
+        Logger.add_end_step(url=self.driver.current_url, method='editing_profile')
 
 
 # python -m pytest -s -v

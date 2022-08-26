@@ -2,6 +2,7 @@
 from selenium.webdriver.common.by import By
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 '''Создание класса Main Page, дочернего по отношению к Base'''
 
@@ -26,10 +27,13 @@ class Knitting_page(Base):
 # Actions - здесь создаются методы непосредственного взаимодействия с элементами главной страницы
 
     def click_link_caskets(self):
+        Logger.add_start_step(method='click_link_caskets')
         self.get_link_caskets().click()
         print('Клик по ссылке раздела шкатулок сделан')
         self.assert_url('https://leonardo.ru/ishop/tree_9538924894/')
         self.get_current_url()
+        Logger.add_end_step(url=self.driver.current_url, method='click_link_caskets')
+
 
 # Scenario - здесь реализуется сценарий взаимодействия с главной страницей
 

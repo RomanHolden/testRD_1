@@ -4,6 +4,7 @@ from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 '''Создание класса Main Page, дочернего по отношению к Base'''
 
@@ -156,15 +157,19 @@ class Main_page(Base):
         print('Иконка "Избранное" нажата')
 
     def click_menu_catalog(self):
+        Logger.add_start_step(method='click_menu_catalog')
         self.get_menu_catalog().click()
         print('Меню каталога открыто')
         self.assert_url('https://leonardo.ru/ishop/')
+        Logger.add_end_step(url=self.driver.current_url, method='click_menu_catalog')
 
 
     def click_link_knitting(self):
+        Logger.add_start_step(method='click_link_knitting')
         self.get_link_knitting().click()
         print('Клик по ссылке товаров для вязания сделан')
         self.assert_url('https://leonardo.ru/ishop/tree_1444732062/')
+        Logger.add_end_step(url=self.driver.current_url, method='click_link_knitting')
 
     def click_link_sewing(self):
         self.get_link_sewing().click()
@@ -172,14 +177,18 @@ class Main_page(Base):
         self.assert_url('https://leonardo.ru/ishop/tree_1454718762/')
 
     def click_link_fabrics(self):
+        Logger.add_start_step(method='click_link_fabrics')
         self.get_link_fabrics().click()
         print('Клик по ссылке раздела тканей сделан')
         self.assert_url('https://leonardo.ru/ishop/tree_8433465762/')
+        Logger.add_end_step(url=self.driver.current_url, method='click_link_fabrics')
 
     def click_link_paints(self):
+        Logger.add_start_step(method='click_link_paints')
         self.get_link_paints().click()
         print('Клик по ссылке раздела красок сделан')
         self.assert_url('https://leonardo.ru/ishop/tree_3780269209/')
+        Logger.add_end_step(url=self.driver.current_url, method='click_link_paints')
 
     def click_link_educational_games(self):
         self.get_link_educational_games().click()
@@ -197,13 +206,16 @@ class Main_page(Base):
 
 
     def hover_menu_catalog(self):
+        Logger.add_start_step(method='hover_menu_catalog')
         ActionChains(self.driver)\
             .move_to_element(self.get_menu_catalog())\
             .perform()
         time.sleep(1)
         print('Курсор наведён на меню каталога')
+        Logger.add_end_step(url=self.driver.current_url, method='hover_menu_catalog')
 
     def hover_link_for_school(self):
+        Logger.add_start_step(method='hover_link_for_school')
         ActionChains(self.driver)\
             .move_to_element(self.get_link_for_school())\
             .perform()
@@ -213,8 +225,10 @@ class Main_page(Base):
             self.assert_word(self.get_link_fabrics(), 'Ткани')
         except AssertionError:
             print('Всплывающих списков не обнаружено (соответствует требованиям)')
+        Logger.add_end_step(url=self.driver.current_url, method='hover_link_for_school')
 
     def hover_link_sewing(self):
+        Logger.add_start_step(method='hover_link_sewing')
         ActionChains(self.driver)\
             .move_to_element(self.get_link_sewing())\
             .perform()
@@ -224,20 +238,20 @@ class Main_page(Base):
             self.assert_word(self.get_link_fabrics(), 'Ткани')
         except AssertionError:
             print('Всплывающий список не соответствует требованиям и/или отсутствует')
+        Logger.add_end_step(url=self.driver.current_url, method='hover_link_sewing')
 
     def hover_link_for_artists(self):
+        Logger.add_start_step(method='hover_link_for_artists')
         ActionChains(self.driver)\
             .move_to_element(self.get_link_for_artists())\
             .perform()
         time.sleep(0.5)
         print('Курсор наведён на раздел товаров для художников')
-        # try:
-        #     self.assert_word(self.get_link_paints(), 'Краски')
-        # except AssertionError:
-        #     print('Всплывающий список не соответствует требованиям и/или отсутствует')
+        Logger.add_end_step(url=self.driver.current_url, method='hover_link_for_artists')
 
 
     def hover_link_stationery(self):
+        Logger.add_start_step(method='hover_link_stationery')
         ActionChains(self.driver)\
             .move_to_element(self.get_link_stationery())\
             .perform()
@@ -247,8 +261,10 @@ class Main_page(Base):
             self.assert_word(self.get_link_paper(), 'Бумажная продукция')
         except AssertionError:
             print('Всплывающий список не соответствует требованиям и/или отсутствует')
+        Logger.add_end_step(url=self.driver.current_url, method='hover_link_stationery')
 
     def hover_link_knitting(self):
+        Logger.add_start_step(method='hover_link_knitting')
         ActionChains(self.driver)\
             .move_to_element(self.get_link_knitting())\
             .perform()
@@ -258,15 +274,18 @@ class Main_page(Base):
             self.assert_word(self.get_link_needles(), 'Спицы')
         except AssertionError:
             print('Всплывающий список не соответствует требованиям и/или отсутствует')
+        Logger.add_end_step(url=self.driver.current_url, method='hover_link_knitting')
 
 
     def driver_basic(self):
         self.driver.get(self.url)
         self.driver.maximize_window()
 
+
 # Scenario - здесь реализуется сценарий взаимодействия с главной страницей
 
     def authorization(self):
+        Logger.add_start_step(method='authorization')
         self.driver_basic()
         time.sleep(0.3)
         self.click_profile_icon()
@@ -280,8 +299,10 @@ class Main_page(Base):
         self.click_profile_icon()
         time.sleep(0.3)
         self.assert_url('https://leonardo.ru/profile/')
+        Logger.add_end_step(url=self.driver.current_url, method='authorization')
 
     def favourites(self):
+        Logger.add_start_step(method='favourites')
         self.driver_basic()
         self.click_favourites_icon()
         time.sleep(2)
@@ -298,6 +319,7 @@ class Main_page(Base):
         print('Добавленный товар обнаружен на странице "Избранное"')
         print('Завершение теста')
         time.sleep(2)
+        Logger.add_end_step(url=self.driver.current_url, method='favourites')
 
 
 

@@ -3,6 +3,7 @@ import time
 from selenium.webdriver.common.by import By
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 '''Создание класса Cart Page, дочернего по отношению к Base'''
 
@@ -155,12 +156,15 @@ class Cart_page(Base):
         print('Иконка корзины вверху экрана нажата')
 
     def driver_basic(self):
+
         self.driver.get(self.url)
         self.driver.maximize_window()
+
 
 # Scenario - здесь реализуется сценарий взаимодействия с главной страницей
 
     def place_order(self):
+        Logger.add_start_step(method='place_order')
         time.sleep(1)
         self.assert_word(self.get_item_title_in_cart(), 'Краска акриловая "VISTA-ARTISTA" idea декоративная глянцевая IGA-50 50 мл 102 Белая (White)')
         assert self.get_price_in_cart_1() == 130
@@ -183,14 +187,17 @@ class Cart_page(Base):
         print('Форма оплаты верифицирована (по наличию раздела: СПОСОБ ОПЛАТЫ)')
         assert self.get_delivery_title() == 'ДОСТАВКА'
         print('Форма оплаты верифицирована (по наличию раздела: ДОСТАВКА)')
+        Logger.add_end_step(url=self.driver.current_url, method='place_order')
 
     def throw_item_from_cart(self):
+        Logger.add_start_step(method='throw_item_from_cart')
         time.sleep(1)
         self.click_basket_icon()
         time.sleep(1)
         self.click_cart_icon()
         assert self.get_empty_cart_text().text == 'В ВАШЕЙ КОРЗИНЕ ПОКА НИЧЕГО НЕТ'
         print('Корзина пуста - проверено')
+        Logger.add_end_step(url=self.driver.current_url, method='throw_item_from_cart')
 
 
     # python -m pytest -s -v

@@ -5,6 +5,7 @@ from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
 from base.base_class import Base
+from utilities.logger import Logger
 
 '''Создание класса Books Page, дочернего по отношению к Base'''
 
@@ -90,6 +91,7 @@ class Books_page(Base):
 # Scenario - здесь реализуется сценарий взаимодействия с главной страницей
 
     def filters_in_books(self):
+        Logger.add_start_step(method='filters_in_books')
         self.driver_basic()
 
         self.click_link_house_design()
@@ -132,6 +134,7 @@ class Books_page(Base):
         self.click_clear_filters_button()
         time.sleep(1)
         self.look_for_element()  # считаем элементы
+        Logger.add_end_step(url=self.driver.current_url, method='filters_in_books')
 
 
 # python -m pytest -s -v

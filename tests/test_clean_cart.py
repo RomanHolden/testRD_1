@@ -1,4 +1,5 @@
 import time
+import allure 
 from selenium import webdriver
 
 from pages.cart_page import Cart_page
