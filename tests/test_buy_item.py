@@ -7,7 +7,7 @@ from pages.main_page import Main_page
 from pages.paints_page import Paints_page
 
 def test_buying_item():
-
+    '''В этом тесте мы проверяем возможность покупки товара'''
     driver = webdriver.Chrome(executable_path=r'C:\\Users\\rdykin\\PycharmProjects\\resource\\chromedriver.exe')
     print('Начало теста')
 

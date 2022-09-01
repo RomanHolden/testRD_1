@@ -6,7 +6,7 @@ from pages.main_page import Main_page
 
 
 def test_filters():
-
+    '''В этом тесте мы проверяем возможность использования фильтров при покупке товара'''
     driver = webdriver.Chrome(executable_path=r'C:\\Users\\rdykin\\PycharmProjects\\resource\\chromedriver.exe')
     print('Начало теста')
 

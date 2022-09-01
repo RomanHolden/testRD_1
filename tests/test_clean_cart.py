@@ -1,5 +1,4 @@
 import time
-import allure 
 from selenium import webdriver
 
 from pages.cart_page import Cart_page
@@ -7,7 +6,7 @@ from pages.main_page import Main_page
 from pages.paints_page import Paints_page
 
 def test_empty_cart():
-
+    '''В этом тесте мы проверяем возможность удаления товара из корзины'''
     driver = webdriver.Chrome(executable_path=r'C:\\Users\\rdykin\\PycharmProjects\\resource\\chromedriver.exe')
     print('Начало теста')
 

@@ -1,0 +1,370 @@
+
+-----
+Test: test_add_to_favourites.py::test_add_item_to_favourites (call)
+Start time: 2022-08-30 12:07:13.988947
+Start name method: authorization
+
+End time: 2022-08-30 12:07:27.474682
+End name method: authorization
+URL: https://leonardo.ru/profile/
+
+-----
+
+-----
+Test: test_add_to_favourites.py::test_add_item_to_favourites (call)
+Start time: 2022-08-30 12:07:28.983632
+Start name method: favourites
+
+
+-----
+Test: test_buy_item.py::test_buying_item (call)
+Start time: 2022-08-30 12:08:50.782717
+Start name method: click_menu_catalog
+
+End time: 2022-08-30 12:08:52.065437
+End name method: click_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_buy_item.py::test_buying_item (call)
+Start time: 2022-08-30 12:08:53.576412
+Start name method: hover_menu_catalog
+
+End time: 2022-08-30 12:08:54.850089
+End name method: hover_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_buy_item.py::test_buying_item (call)
+Start time: 2022-08-30 12:08:54.850089
+Start name method: hover_link_for_school
+
+End time: 2022-08-30 12:08:55.681211
+End name method: hover_link_for_school
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_buy_item.py::test_buying_item (call)
+Start time: 2022-08-30 12:08:55.681211
+Start name method: hover_link_sewing
+
+End time: 2022-08-30 12:08:56.479017
+End name method: hover_link_sewing
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_buy_item.py::test_buying_item (call)
+Start time: 2022-08-30 12:08:56.479017
+Start name method: hover_link_for_artists
+
+End time: 2022-08-30 12:08:57.254320
+End name method: hover_link_for_artists
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_buy_item.py::test_buying_item (call)
+Start time: 2022-08-30 12:08:57.254320
+Start name method: click_link_paints
+
+End time: 2022-08-30 12:09:00.120190
+End name method: click_link_paints
+URL: https://leonardo.ru/ishop/tree_3780269209/
+
+-----
+
+-----
+Test: test_buy_item.py::test_buying_item (call)
+Start time: 2022-08-30 12:09:04.038977
+Start name method: add_item_into_cart
+
+End time: 2022-08-30 12:09:15.135686
+End name method: add_item_into_cart
+URL: https://leonardo.ru/cart/
+
+-----
+
+-----
+Test: test_buy_item.py::test_buying_item (call)
+Start time: 2022-08-30 12:09:16.372885
+Start name method: place_order
+
+
+-----
+Test: test_clean_cart.py::test_empty_cart (call)
+Start time: 2022-08-30 12:09:23.526321
+Start name method: click_menu_catalog
+
+End time: 2022-08-30 12:09:24.960904
+End name method: click_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_clean_cart.py::test_empty_cart (call)
+Start time: 2022-08-30 12:09:26.468594
+Start name method: hover_menu_catalog
+
+End time: 2022-08-30 12:09:27.742904
+End name method: hover_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_clean_cart.py::test_empty_cart (call)
+Start time: 2022-08-30 12:09:27.742904
+Start name method: hover_link_for_school
+
+End time: 2022-08-30 12:09:28.546818
+End name method: hover_link_for_school
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_clean_cart.py::test_empty_cart (call)
+Start time: 2022-08-30 12:09:28.546818
+Start name method: hover_link_for_artists
+
+End time: 2022-08-30 12:09:29.322215
+End name method: hover_link_for_artists
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_clean_cart.py::test_empty_cart (call)
+Start time: 2022-08-30 12:09:29.322215
+Start name method: click_link_paints
+
+End time: 2022-08-30 12:09:34.832220
+End name method: click_link_paints
+URL: https://leonardo.ru/ishop/tree_3780269209/
+
+-----
+
+-----
+Test: test_clean_cart.py::test_empty_cart (call)
+Start time: 2022-08-30 12:09:38.555358
+Start name method: add_item_into_cart
+
+End time: 2022-08-30 12:09:50.122358
+End name method: add_item_into_cart
+URL: https://leonardo.ru/cart/
+
+-----
+
+-----
+Test: test_clean_cart.py::test_empty_cart (call)
+Start time: 2022-08-30 12:09:53.707127
+Start name method: throw_item_from_cart
+
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:02.358459
+Start name method: click_menu_catalog
+
+End time: 2022-08-30 12:10:06.387587
+End name method: click_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:07.896453
+Start name method: tab_switching
+
+End time: 2022-08-30 12:10:19.805258
+End name method: tab_switching
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:19.805258
+Start name method: hover_menu_catalog
+
+End time: 2022-08-30 12:10:21.087912
+End name method: hover_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:21.087912
+Start name method: hover_link_for_school
+
+End time: 2022-08-30 12:10:21.882385
+End name method: hover_link_for_school
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:21.882385
+Start name method: hover_link_sewing
+
+End time: 2022-08-30 12:10:22.675318
+End name method: hover_link_sewing
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:22.675318
+Start name method: hover_link_for_artists
+
+End time: 2022-08-30 12:10:23.459466
+End name method: hover_link_for_artists
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:23.459466
+Start name method: hover_link_stationery
+
+End time: 2022-08-30 12:10:24.770013
+End name method: hover_link_stationery
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:24.770013
+Start name method: hover_link_knitting
+
+End time: 2022-08-30 12:10:26.082339
+End name method: hover_link_knitting
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:26.082339
+Start name method: click_link_knitting
+
+End time: 2022-08-30 12:10:28.709260
+End name method: click_link_knitting
+URL: https://leonardo.ru/ishop/tree_1444732062/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:30.716744
+Start name method: click_link_caskets
+
+End time: 2022-08-30 12:10:38.375752
+End name method: click_link_caskets
+URL: https://leonardo.ru/ishop/tree_9538924894/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:46.306465
+Start name method: hover_menu_catalog
+
+End time: 2022-08-30 12:10:47.587960
+End name method: hover_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:48.593552
+Start name method: hover_link_sewing
+
+End time: 2022-08-30 12:10:49.389203
+End name method: hover_link_sewing
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_menu_catalog.py::test_menu_analysis (call)
+Start time: 2022-08-30 12:10:50.398609
+Start name method: click_link_fabrics
+
+End time: 2022-08-30 12:10:52.972765
+End name method: click_link_fabrics
+URL: https://leonardo.ru/ishop/tree_8433465762/
+
+-----
+
+-----
+Test: test_profile_sections.py::test_profile (call)
+Start time: 2022-08-30 12:10:59.195814
+Start name method: authorization
+
+End time: 2022-08-30 12:11:09.810907
+End name method: authorization
+URL: https://leonardo.ru/profile/
+
+-----
+
+-----
+Test: test_profile_sections.py::test_profile (call)
+Start time: 2022-08-30 12:11:09.811902
+Start name method: editing_profile
+
+End time: 2022-08-30 12:11:32.252966
+End name method: editing_profile
+URL: https://leonardo.ru/profile/
+
+-----
+
+-----
+Test: test_using_filters.py::test_filters (call)
+Start time: 2022-08-30 12:11:39.091369
+Start name method: click_menu_catalog
+
+End time: 2022-08-30 12:11:42.235122
+End name method: click_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_using_filters.py::test_filters (call)
+Start time: 2022-08-30 12:11:43.241557
+Start name method: hover_menu_catalog
+
+End time: 2022-08-30 12:11:44.511881
+End name method: hover_menu_catalog
+URL: https://leonardo.ru/ishop/
+
+-----
+
+-----
+Test: test_using_filters.py::test_filters (call)
+Start time: 2022-08-30 12:11:46.405556
+Start name method: filters_in_books
+
+End time: 2022-08-30 12:12:05.752883
+End name method: filters_in_books
+URL: https://leonardo.ru/ishop/tree_9538925112/
+
+-----

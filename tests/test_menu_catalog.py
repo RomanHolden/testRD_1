@@ -7,7 +7,7 @@ from pages.main_page import Main_page
 
 
 def test_menu_analysis():
-
+    '''В этом тесте мы проверяем варианты взаимодействия с главным меню каталога '''
     driver = webdriver.Chrome(executable_path=r'C:\\Users\\rdykin\\PycharmProjects\\resource\\chromedriver.exe')
     print('Начало теста')
 

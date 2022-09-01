@@ -5,7 +5,7 @@ from pages.profile_page import Profile_page
 
 
 def test_profile():
-
+    '''В этом тесте мы проверяем возможность редактирования профиля'''
     driver = webdriver.Chrome(executable_path=r'C:\\Users\\rdykin\\PycharmProjects\\resource\\chromedriver.exe')
     print('Начало теста')
 
