@@ -34,3 +34,4 @@ def test_empty_cart():
     driver.quit()
 
 # python -m pytest -s -v test_clean_cart.py
+# pytest -s -v test_clean_cart.py test_menu_catalog.py test_profile_sections.py --alluredir=allureress

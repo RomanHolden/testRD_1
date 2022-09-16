@@ -1,0 +1,17 @@
+
+-----
+Test: test_profile_sections.py::test_profile (call)
+Start time: 2022-09-16 15:59:40.322919
+Start name method: authorization
+
+End time: 2022-09-16 15:59:47.551315
+End name method: authorization
+URL: https://leonardo.ru/profile/
+
+-----
+
+-----
+Test: test_profile_sections.py::test_profile (call)
+Start time: 2022-09-16 15:59:47.551315
+Start name method: editing_profile
+

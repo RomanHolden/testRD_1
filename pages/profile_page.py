@@ -1,4 +1,5 @@
 import time
+import os
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
@@ -26,6 +27,7 @@ class Profile_page(Base):
     profile_surname = '//*[@id="order_form"]/div[1]/div/div[2]/div[1]/div[2]/input'
     profile_phone = '//*[@id="order_form"]/div[1]/div/div[1]/div[2]/input'
     save_changes = '//*[@id="order_form"]/div[2]/div/div[3]/div[2]/input'
+    download_save = '//*[@id="selClickSave"]'
 
     # CHECK SAVINGS
     saving_marker = '/html/body/div[2]/div[3]/div[2]/div/div/div[2]' #слово "Сохранено!" после нажатия кнопки
@@ -65,6 +67,11 @@ class Profile_page(Base):
         return WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable((By.XPATH, self.name_marker)))
         #return self.driver.find_element(By.XPATH, self.name_marker)
 
+    def get_download_save(self):
+        return WebDriverWait(self.driver, 10).until(expected_conditions.element_to_be_clickable((By.XPATH, self.download_save)))
+        #return self.driver.find_element(By.XPATH, self.name_marker)
+
+
 
 
 # Actions - здесь создаются методы непосредственного взаимодействия с элементами главной страницы
@@ -103,23 +110,38 @@ class Profile_page(Base):
         self.driver.get(self.url)
         self.driver.maximize_window()
 
-# Scenario - здесь реализуется сценарий взаимодействия с главной страницей
+    def download_file(self):
+        current_dir = os.path.abspath(os.path.dirname(__file__))
+        file_name = "cat_pic.jpg"
+        file_path = os.path.join(current_dir, file_name)
+        print('Путь к файлу: ', file_path)
+        element = self.driver.find_element(By.CSS_SELECTOR, "[type='file']")
+        element.send_keys(file_path)
+        time.sleep(1)
+        self.get_download_save().click()
+        print('Кнопка сохранения загруженного изображения нажата')
+        time.sleep(1)
+
+    # Scenario - здесь реализуется сценарий взаимодействия с главной страницей
 
     def editing_profile(self):
         Logger.add_start_step(method='editing_profile')
         self.driver_basic()
 
-        time.sleep(1.5)
+        time.sleep(1)
         self.click_edit_option()
 
-        time.sleep(1.5)
+        time.sleep(1)
         self.input_profile_name()
 
-        time.sleep(1.5)
+        time.sleep(1)
         self.input_profile_surname()
 
-        time.sleep(1.5)
+        time.sleep(1)
         self.input_profile_phone()
+
+        time.sleep(1)
+        self.download_file()
 
         time.sleep(1.5)
         self.click_save_changes()
